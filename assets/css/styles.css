@@ -1,0 +1,377 @@
+/*              DOCUMENT SETTINGS              */
+:root {
+  /* ###### COLOR VARIABLES #######*/
+  --navbar-bg: rgb(54, 190, 231);
+  --primary-text-color: #ffffff;
+  --navbar-border: transparent;
+  --secondary-text-color: #e9587f;
+
+  /* ###### FONT SZIE VARIABLES #######*/
+  --default-font-size: 1.6rem;
+  --heading-primary: 7rem;
+  --heading-primary--big: 3rem;
+  --heading-primary--medium: 5rem;
+  --heading-secondary--medium: 2.5rem;
+  --navbar-font-size: 2rem;
+
+  /* GRADIENTS */
+  --footer-bg: #111;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+}
+
+/* h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #e9587f !important;
+} */
+
+.clickable {
+  cursor: pointer;
+}
+.clickable:hover {
+  background: gainsboro;
+}
+/* NAVBAR */
+.navbar-bg-cl {
+  background: var(--navbar-bg) !important;
+  border-bottom: 1px solid rgba(220, 220, 220, 0.158);
+}
+.navbar__items__item {
+  padding: 0 0.2rem 0 0.2rem;
+}
+
+.nav-link.navbar__items__item__link {
+  color: var(--primary-text-color) !important;
+  text-transform: uppercase;
+  border-bottom: 0.2rem solid transparent;
+}
+.nav-link:hover {
+  color: var(--secondary-text-color) !important;
+  border-color: var(--secondary-text-color) !important;
+}
+
+/* BRAND */
+#branding {
+  height: 3rem;
+  width: 3rem;
+  border: 0 !important;
+  padding: 0 !important;
+}
+#branding-img {
+  -webkit-transition: all 0.4s ease-out 0s;
+  -o-transition: all 0.4s ease-out 0s;
+  transition: all 0.4s ease-out 0s;
+  border-radius: 50%;
+}
+#branding-img:hover {
+  cursor: default;
+  -webkit-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  transform: rotate(360deg);
+  -webkit-transition: all 0.9s ease-out 0s;
+  -o-transition: all 0.9s ease-out 0s;
+  transition: all 0.9s ease-out 0s;
+  background: var(--secondary-text-color);
+  cursor: pointer;
+}
+#brand-preview {
+  padding: 0.5rem;
+  color: white !important;
+}
+#brand-preview:hover {
+  color: var(--secondary-text-color) !important;
+}
+/**
+  CONTENT
+*/
+
+.landing {
+  border: 1px solid rend;
+  height: 90vh;
+  position: relative;
+}
+
+.video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: inherit;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.8;
+  overflow: hidden;
+}
+video {
+  height: inherit;
+  width: 100vw;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
+}
+
+.section-festival-preview__information__social-links__link__img {
+  height: 4rem;
+  width: auto;
+  padding: 0.5rem;
+}
+
+/** Heading */
+.heading-1 {
+  font-size: var(--heading-primary--big);
+  color: var(--primary-text-color);
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+  text-transform: uppercase;
+}
+.heading-2 {
+  color: var(--secondary-text-color);
+  font-size: var(--heading-secondary--medium);
+  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1),
+    0px 18px 23px rgba(0, 0, 0, 0.1);
+}
+
+.footer {
+  background: var(--footer-bg);
+  color: var(--primary-text-color);
+}
+
+.footer__nav-link {
+  color: var(--primary-text-color);
+}
+.footer__nav-link:hover {
+  color: var(--primary-text-color);
+}
+.divider {
+  background: #ffffff;
+}
+
+.content-view {
+  min-height: 100vh;
+  background-color: #eee;
+}
+
+.submit-btn {
+  width: 100%;
+}
+
+.content-view__content {
+  background: white;
+  border: 1px solid gainsboro;
+  border-radius: 1.5rem 1.5rem;
+}
+.right-side {
+  border: 1px solid gainsboro;
+  border-radius: 2rem 2rem;
+  background: white;
+}
+
+.form-heading {
+  color: var(--secondary-text-color);
+  border-bottom: 2px solid var(--secondary-text-color);
+}
+
+.content-heading {
+  color: var(--secondary-text-color);
+  font-size: 4rem;
+}
+
+.lineup-table > tbody {
+  border: 1px solid gainsboro;
+}
+
+.lineup-table > tbody > tr:nth-of-type(even) {
+  background: rgb(243, 243, 243);
+}
+
+.all-exp-container {
+  border: 1px solid gainsboro;
+  border-radius: 1rem 1rem;
+}
+.exp-comma {
+  font-size: 3rem;
+}
+.exp-container {
+  padding: 3rem;
+  border-bottom: 1px solid gainsboro;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-origin: border-box;
+}
+.image-container {
+  overflow: hidden;
+  height: 200px;
+  border-radius: 1rem 1rem;
+}
+
+@media screen and (max-width: 720px) {
+  .content-heading {
+    font-size: 3rem;
+  }
+  .content-view {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .content-view > .row {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+  }
+
+  .content-view__content {
+    margin: 0 !important;
+
+    border-radius: 0;
+  }
+  .right-side {
+    border-radius: 0;
+    padding-bottom: 5rem !important;
+  }
+  .row > div {
+    padding: 0;
+  }
+  .table-responsive {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+  }
+
+  .all-exp-container {
+    border: 0;
+  }
+
+  .exp-container {
+    margin-top: 1rem;
+    border: 1px solid gainsboro !important;
+    border-radius: 1rem 1rem;
+  }
+}
+
+.gear {
+  -webkit-animation-name: ckw;
+  animation-name: ckw;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  /* Things added */
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  display: inline-block;
+  /* <--- */
+}
+@-webkit-keyframes ckw {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes ckw {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+/**MODAL BOX CSS*/
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: hidden; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+.modal-checkinput {
+  border: 1px solid gainsboro;
+  padding: 0.2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+/** GAME*/
+#grid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.grid-row {
+  display: flex;
+  flex-direction: row;
+}
+.grid-cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid gainsboro;
+  background: white;
+  height: 3rem;
+  width: 3rem;
+  cursor: pointer;
+  color: dodgerblue;
+}
+
+.grid-cell:hover {
+  border: 1px solid gainsboro;
+  background: dodgerblue;
+  color: white;
+}
+
+/* STATUS BOX*/
+#status-box {
+  border: 1px solid gainsboro;
+  display: flex;
+  flex-direction: row;
+  margin: 1rem;
+  justify-content: space-evenly;
+}
